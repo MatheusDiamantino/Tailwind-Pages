@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.1/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <style>
+        body {
+            background-image: url();
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-transparent border-gray-200 px-4 py-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto flex items-center justify-between">
+            <img class="w-12 sm:w-14" src="https://cdn.worldvectorlogo.com/logos/vue-9.svg" alt="Vue Logo" />
+            <button
+                class="rounded-lg bg-[#41B883] px-3 py-1 sm:px-4 sm:py-2 font-semibold text-[#34495E] transition-transform duration-300 hover:scale-105">
+                {{button1}}
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="my-8 flex flex-col lg:flex-row lg:justify-between">
+            <div class="flex w-full lg:w-2/4 justify-center my-8 lg:my-14">
+                <h1
+                    class="mt-8 lg:mt-12 text-2xl sm:text-3xl lg:text-4xl font-semibold leading-8 sm:leading-9 lg:leading-10 text-[#34495E] text-center lg:text-left">
+                    {{ message }}
+                </h1>
+            </div>
+            <div class="flex w-full lg:w-1/2 justify-center">
+                <img class="w-2/3"
+                    src="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-bitcoin_114360-640.jpg?t=st=1725389729~exp=1725393329~hmac=0f46acd463b532c07e179b0bb4d8efeaa72d18c3481012c8f219de5bebe9ba83&w=826">
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="mb-8 sm:mb-10 lg:mb-14 flex flex-col items-center p-6 sm:p-8 lg:p-10 fundo">
+        <div class="mb-4 sm:mb-6 lg:mb-8 flex items-center justify-center">
+            <h1 class="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-[#34495E] uppercase w-">
+                {{sessoes}}
+            </h1>
+        </div>
+        <div class="flex items-center justify-center">
+            <button
+                class="rounded-full bg-[#41B883] px-8 sm:px-12 lg:px-20 py-2 text-base sm:text-lg lg:text-xl font-semibold text-[#34495E] transition-transform duration-300 hover:scale-105">
+                {{button2}}
+            </button>
+        </div>
+    </div>
+
+    <!-- Section with Images -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row justify-between items-center mb-6">
+            <!-- Section 1 -->
+            <div
+                class="w-full lg:w-1/2 flex flex-col lg:flex-row items-center lg:items-start px-0 lg:px-10 mb-6 lg:mb-0">
+                <div class="flex justify-center lg:justify-start my-auto">
+                    <h1 class="font-bold uppercase text-xl sm:text-2xl lg:text-3xl text-[#34495E]">Vestibulum</h1>
+                </div>
+                <div class="flex justify-center lg:justify-end w-full lg:w-1/2 mt-4 lg:mt-0">
+                    <img src="https://images.vexels.com/media/users/3/166383/isolated/preview/6024bc5746d7436c727825dc4fc23c22-icone-de-linguagem-de-programacao-html.png"
+                        class="w-16 sm:w-20 lg:w-24" alt="HTML">
+                    <img src="https://images.vexels.com/media/users/3/166485/isolated/preview/d4061b653e6ba02ad0afdc79e0315a25-icone-da-linguagem-de-programacao-ruby.png?width=1130"
+                        class="w-16 sm:w-20 lg:w-24 ml-4" alt="Ruby">
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div
+                class="w-full lg:w-1/2 flex flex-col lg:flex-row items-center lg:items-start px-0 lg:px-10 mb-6 lg:mb-0">
+                <div class="flex justify-center lg:justify-start my-auto">
+                    <h1 class="font-bold uppercase text-xl sm:text-2xl lg:text-3xl text-[#34495E]">Quisque</h1>
+                </div>
+                <div class="flex justify-center lg:justify-end w-full lg:w-1/2 mt-4 lg:mt-0">
+                    <img src="https://images.vexels.com/media/users/3/166253/isolated/preview/14bc03b7b1c2c4e2656fd4c0a981cbbc-icone-da-linguagem-de-programacao-cpp.png?width=1130"
+                        class="w-16 sm:w-20 lg:w-24" alt="C++">
+                    <img src="https://images.vexels.com/media/users/3/166179/isolated/preview/b83d6b47a9502dfaf535087627a8bf96-icone-da-linguagem-de-programacao-c.png?width=1130"
+                        class="w-16 sm:w-20 lg:w-24 ml-4" alt="C">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-between items-center mb-6">
+            <!-- Section 3 -->
+            <div
+                class="w-full lg:w-1/2 flex flex-col lg:flex-row items-center lg:items-start px-0 lg:px-10 mb-6 lg:mb-0">
+                <div class="flex justify-center lg:justify-start my-auto">
+                    <h1 class="font-bold uppercase text-xl sm:text-2xl lg:text-3xl text-[#34495E]">MULUBITSEV</h1>
+                </div>
+                <div class="flex justify-center lg:justify-end w-full lg:w-1/2 mt-4 lg:mt-0">
+                    <img src="https://images.vexels.com/media/users/3/166401/isolated/preview/b82aa7ac3f736dd78570dd3fa3fa9e24-icone-da-linguagem-de-programacao-java.png"
+                        class="w-16 sm:w-20 lg:w-24" alt="Java">
+                    <img src="https://images.vexels.com/media/users/3/132780/isolated/preview/63ebd997ff484777df95109bd68cf0ba-logotipo-da-bolha-do-wordpress.png"
+                        class="w-16 sm:w-20 lg:w-24 ml-4" alt="WordPress">
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div
+                class="w-full lg:w-1/2 flex flex-col lg:flex-row items-center lg:items-start px-0 lg:px-10 mb-6 lg:mb-0">
+                <div class="flex justify-center lg:justify-start my-auto">
+                    <h1 class="font-bold uppercase text-xl sm:text-2xl lg:text-3xl text-[#34495E]">Quequis</h1>
+                </div>
+                <div class="flex justify-center lg:justify-end w-full lg:w-1/2 mt-4 lg:mt-0">
+                    <img src="https://images.vexels.com/media/users/3/166477/isolated/preview/9bb722f0e85ddbc1ce0f064534fd2311-icone-da-linguagem-de-programacao-python.png?width=1130"
+                        class="w-16 sm:w-20 lg:w-24" alt="Python">
+                    <img src="https://images.vexels.com/media/users/3/166403/isolated/preview/a5a33bf3004830a2bd581e9fa65de660-icone-da-linguagem-de-programacao-javascript.png?width=1130"
+                        class="w-16 sm:w-20 lg:w-24 ml-4" alt="JavaScript">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Section -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center mt-40 mb-20">
+        <h1 class="font-semibold text-4xl text-[#34495E]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec facilisis libero. Etiam fringilla
+            molestie molestie. Donec vitae vulputate felis.
+        </h1>
+        <h2 class="font-medium text-xl my-5 text-[#34495E]">Proin fermentum aliquam ligula, ac commodo tellus tempor
+            nec. Sed auctor rhoncus libero, sed dictum ipsum consequat ut. Etiam sollicitudin condimentum efficitur. In
+            imperdiet quam et neque tempor luctus. Mauris ut maximus eros. Vestibulum tempus rutrum finibus.</h2>
+        <button
+            class="rounded-full bg-[#41B883] px-8 sm:px-12 lg:px-20 py-2 text-base sm:text-lg lg:text-xl font-semibold text-[#34495E] transition-transform duration-300 hover:scale-105">
+            {{button3}}
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class=" py-6 text-center text-[#34495e]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="mb-2">&copy; 2024 Meu Não, Nosso. Todos os direitos reservados</p>
+            <p>Desenvolvido por sua irmã</p>
+        </div>
+    </footer>
+
+    <!-- Vue Initialization -->
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    message: 'Ut ultricies arcu lorem, sit amet ullamcorper tellus fringilla ac. Quisque ligula eros, hendrerit et dui ut, vehicula commodo neque. Curabitur congue tristique porttitor. Aliquam sit amet quam iaculis, dictum ipsum ut, pretium leo',
+                    sessoes: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet',
+                    button1: 'Botão',
+                    button2: 'Outro botão',
+                    button3: 'Mais outro botão'
+                }
+            }
+        });
+
+        app.mount('body');
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</body>
+
+</html>
