@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobre Adega</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sora box-border p-0 m-0">
+    <nav class="bg-black text-white px-4 sm:px-6 lg:px-8 py-4 shadow-md">
+        <div class="container mx-auto flex items-center justify-between">
+            <img src="./img/logo.webp" alt="Logo da Nobre Adega" class="w-28">
+            <div class="lg:hidden flex items-center">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="menu" class="hidden lg:flex space-x-8">
+                <li class="transition-transform duration-500 hover:scale-105"><a href="#home" class="text-white hover:text-gray-400">Home</a></li>
+                <li class="transition-transform duration-500 hover:scale-105"><a href="#sobre" class="text-white hover:text-gray-400">Sobre</a></li>
+                <li class="transition-transform duration-500 hover:scale-105"><a href="#produtos" class="text-white hover:text-gray-400">Produtos</a></li>
+                <li class="transition-transform duration-500 hover:scale-105"><a href="#contato" class="text-white hover:text-gray-400">Contato</a></li>
+            </ul>
+        </div>
+        <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-black bg-opacity-75 z-50 hidden">
+            <div class="flex flex-col items-center justify-center h-full">
+                <button id="close-menu" class="absolute top-4 right-4 text-white text-2xl">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <ul class="space-y-6">
+                    <li><a href="#home" class="text-white text-2xl hover:text-gray-400">Home</a></li>
+                    <li><a href="#sobre" class="text-white text-2xl hover:text-gray-400">Sobre</a></li>
+                    <li><a href="#produtos" class="text-white text-2xl hover:text-gray-400">Produtos</a></li>
+                    <li><a href="#contato" class="text-white text-2xl hover:text-gray-400">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="text-center py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold text-red-800 mb-4 tracking-wider">Bem-vindo à Nobre Adega</h1>
+            <p class="text-lg text-gray-700">Descubra o melhor dos vinhos e espumantes, direto da nossa adega para o seu paladar.</p>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-16 bg-cover bg-center bg-no-repeat" style="background-image: url('./img/fundo.jpg');">
+        <div class="container mx-auto text-center bg-black bg-opacity-50 p-6 rounded-lg">
+            <h2 class="text-3xl font-semibold text-red-800 mb-4">Sobre Nós</h2>
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class=" bg-opacity-70 text-white p-6 rounded-lg flex flex-col items-center">
+                    <img src="./img/taca.webp" alt="Qualidade" class="w-28 h-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Qualidade</h3>
+                    <p>Nosso compromisso é com a qualidade, utilizando apenas as melhores uvas e técnicas de produção.</p>
+                </div>
+                <div class=" bg-opacity-70 text-white p-6 rounded-lg flex flex-col items-center">
+                    <img src="./img/uva.webp" alt="Tradição" class="w-28 h-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Tradição</h3>
+                    <p>Seguindo tradições centenárias, garantimos uma experiência autêntica em cada garrafa.</p>
+                </div>
+                <div class=" bg-opacity-70 text-white p-6 rounded-lg flex flex-col items-center">
+                    <img src="./img/inova.webp" alt="Inovação" class="w-24 h-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Inovação</h3>
+                    <p>Incorporamos inovações para aprimorar nossos produtos e oferecer o melhor para nossos clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="mt-32">
+        <div class="items-center flex flex-col m-10">
+            <h1 class="text-3xl font-semibold text-red-800 tracking-wider">Vinhos e Espumantes</h1>
+            <h3 class="text-lg font-light mb-4">Aproveite nossos descontos</h3>
+        </div>
+        <div class="flex flex-wrap gap-4 justify-center">
+            <div class="w-52 h-auto flex flex-col">
+                <img src="./img/vinho1.webp" alt="Garrafa de vinho tinto com rótulo elegante" class="transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="w-52 h-auto flex flex-col">
+                <img src="./img/vinho2.webp" alt="Taça de vinho branco sendo servida" class="transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="w-52 h-auto flex flex-col">
+                <img src="./img/vinho3.webp" alt="Vinho espumante sendo aberto" class="transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="w-52 h-auto flex flex-col">
+                <img src="./img/vinho4.webp" alt="Garrafa de vinho rosé com copo ao lado" class="transition-transform duration-500 hover:scale-105">
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-16 bg-gray-100">
+        <div class="w-full max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-red-800 text-center mb-4">Contato</h2>
+            <p class="text-lg text-gray-700 text-center mb-8">Entre em contato conosco para mais informações ou dúvidas sobre nossos produtos.</p>
+            <div class="flex flex-col items-center">
+                <form class="w-full">
+                    <div class="mb-4">
+                        <label for="nome" class="block text-left text-gray-700">Nome</label>
+                        <input type="text" id="nome" class="w-full px-3 py-2 border border-gray-300 rounded-lg" placeholder="Seu nome">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-left text-gray-700">E-mail</label>
+                        <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg" placeholder="Seu e-mail">
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensagem" class="block text-left text-gray-700">Mensagem</label>
+                        <textarea id="mensagem" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg" placeholder="Sua mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="bg-red-800 text-white px-4 py-2 rounded-lg hover:bg-red-700 w-full">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-6">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">&copy; 2024 Nobre Adega. Todos os direitos reservados.</p>
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#" class="hover:text-gray-400">Privacidade</a></li>
+                <li><a href="#" class="hover:text-gray-400">Termos de Serviço</a></li>
+                <li><a href="#" class="hover:text-gray-400">Política de Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.remove('hidden');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>
